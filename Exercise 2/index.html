@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 8 Exercise 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container cb">
+        <h1>Create your account</h1>
+        <form name="create-account">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" placeholder="type here..">
+            <label for="secondname">Second Name</label>
+            <input type="text" name="secondname" id="secondname" placeholder="type here..">
+            <label for="email">Email address</label>
+            <input type="email" name="email" id="email" placeholder="enter email">
+
+            <div class="radio-container">
+                <input type="radio" name="sex" id="man" checked>
+                <label for="man">man</label>
+                <input type="radio" name="sex" id="woman">
+                <label for="woman">woman</label>
+            </div>
+
+            <label for="position">Position</label>
+            <select name="position" class="select-css" id="position">
+                <option value="none" hidden="">Choose..</option>;
+                <option value="Frontend">Frontend</option>
+                <option value="Backend">Backend</option>
+                <option value="QC/QA">QC/QA</option>
+            </select>
+
+            <div class="checkbox-container">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox">I agree all statements in Terms of service</label>
+            </div>
+
+            <button id="btn" disabled>Sign Up</button>
+        </form>
+    </div>
+    <div class="container-card">
+        <div class="top">
+            <div class="photo"></div>
+        </div>
+        <div class="info">
+            <h3 class="user-name"></h3>
+            <span class="user-email"></span>
+            <span class="user-qualification"></span>
+        </div>
+        <div class="sign-out">
+            <button class="btn-sign-out">Sign Out</button>
+        </div>
+        <div class="social">
+            <img src="img/fb.png" alt="">
+            <img src="img/github.png" alt="">
+            <img src="img/in.png" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
